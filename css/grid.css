@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --title: 'Big Shoulders Display', cursive;
+    --description: 'Lexend Deca', sans-serif;  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.626);
+
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.2%;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.grid-body{
+    background: #353535;
+}
+
+/* ===== HEADER ====== */
+
+.header {
+    width: 100%;
+    height: 6rem;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1rem;
+}
+
+.nav-link-grid a {
+    color: #cee2e9;
+    font-family: var(--title);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+.grid-main{
+    display: flex;
+    place-items: center;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+    background-color: #191a29;
+    box-shadow: var(--dark-shadow);
+}
+.grid-content{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    width: 50%;
+    margin: auto;
+}
+.grid{
+    padding: 1em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.A{
+ background-color: rgb(255, 96, 28);
+ grid-column:1/3;
+ grid-row: 1/3;
+    width: 98%;
+    height: 20.4rem;
+}
+.B{
+    background-color: orange;
+    grid-row: 1/3;
+    width: 180%;
+    height: 20.4rem;
+}
+
+.C{
+    background-color: rgb(48, 177, 48);
+    grid-column: 1/3;
+    grid-row: 3/5;
+    width: 74%;
+}
+
+.D{
+    background-color: rgb(0, 174, 255);
+    position: relative;
+    right: 8.5rem;
+    width: 255%;
+    height: 9rem;
+}
+
+.E{
+    background-color: rgb(0, 174, 255);
+    position: relative;
+    right: 8.5rem;
+    width: 255%;
+    height: 11rem;
+}
